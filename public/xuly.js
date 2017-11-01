@@ -1,9 +1,14 @@
 class KhoaPham extends React.Component{
+    layThongTin:function() {
+        alert(123);
+        
+    },
     render(){
         return (
             <div>
                     <h1 className = "yellow"> {this.props.ten} -{this.props.giangvien} </h1>
                     <p>{this.props.children}</p>
+                    <button onClick={this.layThongTin}>Thong tin</button>
                     <KhoaHoc/>
                     </div>
                 );
