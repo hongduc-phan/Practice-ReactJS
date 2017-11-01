@@ -1,8 +1,17 @@
-ReactDOM.render
-( <h1 className="yellow">Hello</h1>, 
-            document.getElementById("root"));
+class KhoaPham extends React.Component{
+    render(){
+        return (
+                    <h1 className = "yellow"> Khoa Pham React </h1>
+                );
+            }
+    
+};
 
-ReactDOM.render
-            ( <h1 className="yellow">PHAN</h1>, 
-                        document.getElementById("root2"));
+ReactDOM.render(
+<div>
+ <KhoaPham/>
+ <KhoaPham/>
+ <KhoaPham/>
+ </div>,
+document.getElementById('root'));
 
