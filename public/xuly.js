@@ -1,6 +1,16 @@
+function getName(){
+    alert(name);
+}
+
+
 class KhoaPham extends React.Component{
+a()
+{
+    getName(this.props.giangvien)
+},
+
     layThongTin:function() {
-        alert(123);
+        alert(this.props.children);
         
     },
     render(){
@@ -8,7 +18,7 @@ class KhoaPham extends React.Component{
             <div>
                     <h1 className = "yellow"> {this.props.ten} -{this.props.giangvien} </h1>
                     <p>{this.props.children}</p>
-                    <button onClick={this.layThongTin}>Thong tin</button>
+                    <button onClick={()=>{var str = this.props.ten+' '+this.props.giangvien; getName(str)}}>Thong tin</button>
                     <KhoaHoc/>
                     </div>
                 );
