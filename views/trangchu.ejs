@@ -1,10 +1,20 @@
+
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
     <title>Demo ReactJS</title>
+    <script crossorigin src="lib/react.production.min.js"></script>
+    <script crossorigin src="lib/react-dom.production.min.js"></script>
+    <script src="lib/browser.min.js"></script>
+    <script src="lib/browser.js"></script>
   </head>
   <body>
-hello
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        ReactDOM.render( <h1>Hello</h1>, document.getElementById("root"));
+    </script>
   </body>
 </html>
