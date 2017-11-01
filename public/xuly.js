@@ -4,21 +4,28 @@ function getName(){
 
 
 class KhoaPham extends React.Component{
-a()
-{
-    getName(this.props.giangvien)
+
+addStudent(){
+    this.setState({tongHocVien:this.state.tongHocVien+1});
 },
 
     layThongTin:function() {
         alert(this.props.children);
         
     },
+
+    getInitialState()
+    {
+        return{tongHocVien: 10};
+    },
     render(){
         return (
             <div>
                     <h1 className = "yellow"> {this.props.ten} -{this.props.giangvien} </h1>
+                    <div>so hoc vien: {this.state.tongHocVien}</div>
                     <p>{this.props.children}</p>
                     <button onClick={()=>{var str = this.props.ten+' '+this.props.giangvien; getName(str)}}>Thong tin</button>
+                    <button onClick={this.addStudent}>Them hoc vien</button>
                     <KhoaHoc/>
                     </div>
                 );
