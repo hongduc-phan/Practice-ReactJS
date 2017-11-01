@@ -2,7 +2,7 @@ class KhoaPham extends React.Component{
     render(){
         return (
             <div>
-                    <h1 className = "yellow"> Khoa Pham React </h1>
+                    <h1 className = "yellow"> {this.props.ten} -{this.props.giangvien} </h1>
                     <KhoaHoc/>
                     </div>
                 );
@@ -21,9 +21,9 @@ class KhoaHoc extends React.Component{
 
 ReactDOM.render(
 <div>
- <KhoaPham/>
- <KhoaPham/>
- <KhoaPham/>
+ <KhoaPham ten="React JS" giangvien="EKW"/>
+ <KhoaPham ten="Node JS" giangvien="DSE"/>
+ <KhoaPham ten="Angular JS"giangvien="ABC"/>
  </div>,
 document.getElementById('root'));
 
