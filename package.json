@@ -1,0 +1,19 @@
+{
+  "name": "phudc",
+  "version": "1.0.0",
+  "description": "Practice ReactJs",
+  "main": "\u001b[A\u001b[B",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongduc-phan/Practice-ReactJS.git"
+  },
+  "author": "phduc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongduc-phan/Practice-ReactJS/issues"
+  },
+  "homepage": "https://github.com/hongduc-phan/Practice-ReactJS#readme"
+}
